@@ -84,6 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const highlightElements = document.querySelectorAll('.card, .gallery-item');
 
     function handleScroll() {
+        // Disable on Desktop (Standard Breakpoint)
+        if (window.innerWidth > 900) {
+            highlightElements.forEach(el => el.classList.remove('auto-highlight'));
+            return;
+        }
+
         if (highlightElements.length === 0) return;
 
         const viewportCenterX = window.innerWidth / 2;
