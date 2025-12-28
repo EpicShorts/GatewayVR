@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.innerText = originalText;
                 btn.style.background = ''; // Revert
                 contactForm.reset();
-                alert('Thank you for your interest in The VR Gatekeeper. We will be in touch shortly.');
+                alert('Thank you for your interest. We have added you to our update list.');
             }, 2000);
         });
     }
