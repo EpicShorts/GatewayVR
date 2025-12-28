@@ -35,4 +35,4 @@ The landing page for this concept is built with:
 Check out the concept site here: [https://dbt-js.github.io/GatewayVR/](https://dbt-js.github.io/GatewayVR/)
 
 ---
-*Built by Dan. Because I like VR and dislike broken machines.* 🔧
+*Built by Sheep. Because I like VR and dislike broken machines.* 🔧
