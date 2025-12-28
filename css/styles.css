@@ -34,26 +34,30 @@ html {
 }
 
 section[id] {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 90px;
     /* Offset for fixed header */
 }
 
 /* Header & Nav */
 .glass-header {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 1000px;
-    padding: 1rem 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: none;
+    transform: none;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #000;
-    border: var(--border-width) solid white;
-    box-shadow: 6px 6px 0px var(--primary-color);
-    /* Hard shadow */
+    border-bottom: var(--border-width) solid white;
+    /* Only bottom border */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 4px 0px var(--primary-color);
+    /* Shadow downwards */
     z-index: 1000;
     transition: transform 0.2s;
 }
@@ -169,6 +173,11 @@ a.primary-btn:hover {
 /* Sections */
 .section-container {
     padding: 6rem 10%;
+    min-height: 100vh;
+    /* Force full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section-title {
