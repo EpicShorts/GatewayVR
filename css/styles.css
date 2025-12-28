@@ -28,6 +28,10 @@ body {
     line-height: 1.6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Background Effects */
 .background-glow {
     position: fixed;
@@ -157,7 +161,7 @@ h1 {
 }
 
 .highlight {
-    color: var(--danger-color);
+    color: var(--accent-color);
 }
 
 /* Cards Grid */
@@ -328,6 +332,138 @@ h1 {
     border: 1px solid var(--glass-border);
 }
 
+/* Process Section */
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    background: var(--glass-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 2px solid var(--secondary-color);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.05);
+    line-height: 1;
+}
+
+.step h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.step p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Contact Form */
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.glass-form {
+    background: var(--glass-bg);
+    padding: 3rem;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: white;
+    font-family: var(--font-main);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Footer */
+.glass-footer {
+    border-top: 1px solid var(--glass-border);
+    background: rgba(11, 17, 32, 0.9);
+    padding: 4rem 10% 2rem 10%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.footer-brand h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    color: #64748b;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #475569;
+    font-size: 0.9rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+}
+
 /* Buttons */
 .cta-group {
     display: flex;
@@ -417,6 +553,10 @@ h1 {
     animation-delay: 0.6s;
 }
 
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -427,8 +567,6 @@ h1 {
 /* Responsive */
 @media (max-width: 900px) {
     .hero {
-        flex-direction: column-reverse;
-        /* Text on top on mobile/tablet? No, visual often nice but here text is key */
         flex-direction: column;
         text-align: center;
         gap: 3rem;
@@ -473,5 +611,15 @@ h1 {
 
     .right {
         left: 0;
+    }
+
+    .process-steps {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
     }
 }
