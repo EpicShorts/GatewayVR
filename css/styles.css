@@ -44,8 +44,8 @@ section[id] {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1000px;
+    width: 95%;
+    max-width: 1200px;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ section[id] {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -526,6 +526,8 @@ a.primary-btn:hover {
 .footer-links {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-links a {
