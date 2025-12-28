@@ -10,9 +10,9 @@ The premise is simple: **You shouldn't be allowed to touch a £200,000 CNC machi
 In the real world, "training" often means reading a PDF or watching a video. Then you get on the machine, make a mistake, and cause £30k of spindle damage.
 
 **My Solution:**
-1.  **Scan ID**: Badge in at a VR kiosk.
-2.  **VR Challenge**: Prove you can run the "Cold Start" sequence in a 1:1 Digital Twin.
-3.  **Unlock**: If (and only if) you pass, you get a digital token that unlocks the physical machine power.
+1.  **Meta Quest 3**: Put on the headset in Passthrough mode.
+2.  **Mixed Reality**: See the real workshop, but interact with a **holographic CNC machine**.
+3.  **Safe Practice**: Learn the buttons and levers virtually, standing right where the real machine will be.
 
 ## 🤬 The Problem
 *   **Expensive OOFs**: One wrong button press = weeks of downtime and massive repair bills.
@@ -20,10 +20,10 @@ In the real world, "training" often means reading a PDF or watching a video. The
 *   **The "Goldfish Effect"**: Safety procedures are forgotten the moment the induction ends.
 
 ## 🚀 The Vision
-I want to build a "Digital Gatekeeper" that turns safety training into a video game you have to beat to start your shift.
+I want to use **Mixed Reality** to turn safety training into a safe sandbox.
 *   **Safe Failure**: Crash the virtual machine? Cool, reset. No cost.
-*   **Gamified Competency**: High scores for perfect setups.
-*   **Verified Access**: Competency > Seniority.
+*   **Passthrough**: Stay connected to the real environment while training.
+*   **Zero Risk**: Master the controls before you even touch the power switch.
 
 ## 🛠️ Tech Stack (Website)
 The landing page for this concept is built with:
