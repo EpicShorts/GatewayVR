@@ -84,8 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const highlightElements = document.querySelectorAll('.card, .gallery-item');
 
     function handleScroll() {
-        // Disable on Desktop - Stricter Check
-        if (window.matchMedia("(min-width: 900px)").matches) {
+        // Disable on Desktop (Stricter: width > 1024px OR has a mouse)
+        const isDesktop = window.matchMedia("(min-width: 1024px)").matches ||
+            window.matchMedia("(hover: hover)").matches;
+
+        if (isDesktop) {
             highlightElements.forEach(el => el.classList.remove('auto-highlight'));
             return;
         }
