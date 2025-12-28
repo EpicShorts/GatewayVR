@@ -725,8 +725,129 @@ h1 {
     color: var(--danger-color);
 }
 
-/* Mobile Nav Styles override */
+/* Responsive / Mobile Optimization */
 @media (max-width: 900px) {
+
+    /* Global Section Padding */
+    .section-container {
+        padding: 4rem 5%;
+    }
+
+    /* Hero Type & Layout */
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 100px;
+        /* Less top padding */
+        padding-bottom: 4rem;
+        min-height: auto;
+        /* Allow content to dictate height */
+    }
+
+    .hero-content {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        /* Smaller H1 */
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* Hero Buttons - Stack them */
+    .cta-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .cta-group button,
+    .cta-group a {
+        /* Ensure target both */
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Visual Cleanup */
+    .hero-visual {
+        width: 100%;
+        height: 300px;
+        /* Constrain height */
+    }
+
+    .orb {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Comparison Grid */
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .new-way {
+        top: 0;
+        margin-top: 2rem;
+        box-shadow: none;
+        /* Remove Heavy shadow on mobile */
+        border: 1px solid var(--secondary-color);
+    }
+
+    /* Timeline Adjustments */
+    .timeline::after {
+        left: 20px;
+        /* Move line to far left */
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-item.left {
+        text-align: left;
+    }
+
+    .left::after,
+    .right::after {
+        left: 10px;
+        /* Align dots with line */
+    }
+
+    .right {
+        left: 0;
+    }
+
+    /* Process Steps */
+    .process-steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* Header / Nav */
     .hamburger {
         display: flex;
     }
@@ -743,6 +864,8 @@ h1 {
         border-bottom: 1px solid var(--glass-border);
         text-align: center;
         gap: 1.5rem;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
 
     .nav-links.active {
