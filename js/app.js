@@ -79,4 +79,26 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.toggle('active');
         });
     });
+
+    // Auto-Highlight on Scroll (Mobile Polish)
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.6 // Trigger when 60% visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('auto-highlight');
+            } else {
+                entry.target.classList.remove('auto-highlight');
+            }
+        });
+    }, observerOptions);
+
+    // Observe cards and gallery items
+    document.querySelectorAll('.card, .gallery-item').forEach(el => {
+        observer.observe(el);
+    });
 });
