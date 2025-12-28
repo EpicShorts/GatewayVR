@@ -34,7 +34,7 @@ html {
 }
 
 section[id] {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 40px;
     /* Offset for fixed header */
 }
 
@@ -168,7 +168,7 @@ a.primary-btn:hover {
 
 /* Sections */
 .section-container {
-    padding: 6rem 10%;
+    padding: 4rem 10%;
     min-height: 100vh;
     /* Force full height */
     display: flex;
