@@ -447,6 +447,31 @@ a.primary-btn:hover {
         border-right: none;
         border-bottom: var(--border-width) solid white;
     }
+
+    /* Mobile Footer Fix */
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Mobile Header Fix */
+    .nav-links {
+        display: none;
+        /* Hidden by default on mobile, toggled by JS */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: black;
+        border: var(--border-width) solid white;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 /* Custom Scrollbar */
