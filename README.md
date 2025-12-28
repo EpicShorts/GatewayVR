@@ -32,7 +32,7 @@ The landing page for this concept is built with:
 *   **Vanilla JavaScript** (No heavy frameworks, just vibes).
 
 ## 🌍 Live Demo
-Check out the concept site here: [https://dbt-js.github.io/GatewayVR/](https://dbt-js.github.io/GatewayVR/)
+Check out the concept site here: [https://epicshorts.github.io/GatewayVR/](https://epicshorts.github.io/GatewayVR/)
 
 ---
 *Built by Sheep. Because I like VR and dislike broken machines.* 🔧
