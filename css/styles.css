@@ -41,23 +41,19 @@ section[id] {
 /* Header & Nav */
 .glass-header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: none;
-    transform: none;
-    padding: 1rem 5%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1000px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #000;
-    border-bottom: var(--border-width) solid white;
-    /* Only bottom border */
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    box-shadow: 0px 4px 0px var(--primary-color);
-    /* Shadow downwards */
+    border: var(--border-width) solid white;
+    box-shadow: 6px 6px 0px var(--primary-color);
+    /* Hard shadow */
     z-index: 1000;
     transition: transform 0.2s;
 }
