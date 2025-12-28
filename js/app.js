@@ -80,25 +80,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Auto-Highlight on Scroll (Mobile Polish)
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.6 // Trigger when 60% visible
-    };
+    // Auto-Highlight: Single Focus Logic (Proximity to Center)
+    const highlightElements = document.querySelectorAll('.card, .gallery-item');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('auto-highlight');
-            } else {
-                entry.target.classList.remove('auto-highlight');
+    function handleScroll() {
+        if (highlightElements.length === 0) return;
+
+        const viewportCenterX = window.innerWidth / 2;
+        const viewportCenterY = window.innerHeight / 2;
+
+        let closestEl = null;
+        let minDistance = Infinity;
+
+        highlightElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            // Element center
+            const elCenterX = rect.left + rect.width / 2;
+            const elCenterY = rect.top + rect.height / 2;
+
+            // 2D Distance to viewport center
+            const dist = Math.sqrt(
+                Math.pow(elCenterX - viewportCenterX, 2) +
+                Math.pow(elCenterY - viewportCenterY, 2)
+            );
+
+            // Check if element is reasonably visible (e.g. within viewport)
+            if (rect.bottom > 0 && rect.top < window.innerHeight) {
+                if (dist < minDistance) {
+                    minDistance = dist;
+                    closestEl = el;
+                }
             }
         });
-    }, observerOptions);
 
-    // Observe cards and gallery items
-    document.querySelectorAll('.card, .gallery-item').forEach(el => {
-        observer.observe(el);
-    });
+        // Apply classes
+        highlightElements.forEach(el => {
+            if (el === closestEl) {
+                el.classList.add('auto-highlight');
+            } else {
+                el.classList.remove('auto-highlight');
+            }
+        });
+    }
+
+    // Run on scroll and initial load
+    window.addEventListener('scroll', () => requestAnimationFrame(handleScroll));
+    handleScroll(); // Initial check
 });
