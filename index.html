@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="background-glow"></div>
-    
+
     <header class="glass-header">
         <nav>
-            <div class="logo">GatewayVR</div>
+            <div class="logo">The VR Gatekeeper</div>
             <ul class="nav-links">
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#comparison">Solution</a></li>
+                <li><a href="#strategy">Strategy</a></li>
                 <li><a href="#contact" class="cta-button">Get Early Access</a></li>
             </ul>
         </nav>
@@ -28,16 +30,100 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="fade-in-up">Unlock New <span class="gradient-text">Dimensions</span></h1>
-                <p class="fade-in-up delay-1">Immersive virtual reality solutions for business and leisure. distinctively crafted for the modern era.</p>
+                <h1 class="fade-in-up">The VR <span class="gradient-text">Gatekeeper</span></h1>
+                <p class="subtitle fade-in-up delay-1">Ensuring Industrial Competency Through Immersive Validation.</p>
                 <div class="cta-group fade-in-up delay-2">
-                    <button id="exploreBtn" class="primary-btn">Explore Now</button>
-                    <button class="secondary-btn">Watch Demo</button>
+                    <button id="exploreBtn" class="primary-btn">Request Demo</button>
+                    <button class="secondary-btn" href="#solution">See The Solution</button>
                 </div>
             </div>
             <div class="hero-visual">
-                <!-- 3D Element Placeholder or CSS Art -->
                 <div class="orb"></div>
+            </div>
+        </section>
+
+        <!-- The Problem Section -->
+        <section id="problem" class="section-container">
+            <h2 class="section-title fade-in-up">The "Trial-by-Error" <span class="highlight">Risk</span></h2>
+            <p class="section-desc fade-in-up">In high-precision manufacturing, "learning on the job" is a liability.
+            </p>
+
+            <div class="grid-3">
+                <div class="card fade-in-up delay-1">
+                    <div class="icon-box">⚠️</div>
+                    <h3>High-Cost Failures</h3>
+                    <p>A single operator mistake on a machine like a 5-axis mill can cause <strong>£30,000+</strong> in
+                        spindle damage and weeks of unplanned downtime.</p>
+                </div>
+                <div class="card fade-in-up delay-2">
+                    <div class="icon-box">⏳</div>
+                    <h3>The Training Bottleneck</h3>
+                    <p>Traditional training (shadowing and 3-day workshops) is slow, creates massive backlogs, and burns
+                        out senior technicians.</p>
+                </div>
+                <div class="card fade-in-up delay-3">
+                    <div class="icon-box">🧠</div>
+                    <h3>Passive Knowledge Gap</h3>
+                    <p>90% of safety videos and manuals are forgotten within 30 days because they lack the "muscle
+                        memory" of real action.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison" class="section-container bg-darker">
+            <h2 class="section-title">The Solution Gap</h2>
+            <div class="comparison-grid">
+                <div class="comparison-col old-way">
+                    <h3>The Current Solution</h3>
+                    <p class="sub-head">Passive & Risky</p>
+                    <ul>
+                        <li><strong>Manuals & Videos:</strong> Static info fails to replicate pressure.</li>
+                        <li><strong>Classroom Training:</strong> Theory doesn't translate to reflexes.</li>
+                        <li><strong>Live Practice:</strong> High-risk "first-time" attempts on expensive hardware.</li>
+                    </ul>
+                </div>
+                <div class="comparison-col new-way">
+                    <h3>The VR Solution</h3>
+                    <p class="sub-head">The "Digital Gatekeeper"</p>
+                    <p>We replace "watching" with "doing" through a mandatory VR Competency Gate.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Safe Failure</strong>
+                            <span>Experience the "crunch" of a crash in a 1:1 digital twin, safely.</span>
+                        </li>
+                        <li>
+                            <strong>75% Retention</strong>
+                            <span>Build neuro-pathways through physical movement. Hands learn the sequence.</span>
+                        </li>
+                        <li>
+                            <strong>Verified Access</strong>
+                            <span>Encrypted "Competency Token". Shop-floor access only after 100% VR success.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Section -->
+        <section id="strategy" class="section-container">
+            <h2 class="section-title">The Strategy</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>Phase 1: Pilot</h3>
+                        <p>Partnering with the <strong>University of Birmingham</strong> to automate safety sign-offs
+                            for the Haas UMC-750. Freeing up lab technicians and eliminating training waitlists.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>Phase 2: Scale</h3>
+                        <p>Moving to the <strong>Midlands' manufacturing hub</strong> to provide
+                            "Compliance-as-a-Service" for SMEs. Reducing insurance premiums and preventing catastrophic
+                            downtime.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -48,4 +134,5 @@
 
     <script src="js/app.js"></script>
 </body>
+
 </html>
