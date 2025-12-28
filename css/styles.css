@@ -451,63 +451,64 @@ a.primary-btn:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-color);
+}
 
-    /* Footer */
-    .glass-footer {
-        background: #000;
-        border-top: var(--border-width) solid white;
-        padding: 3rem 10%;
-        margin-top: 4rem;
-        position: relative;
-        z-index: 100;
-        text-align: center;
-    }
+/* Footer */
+.glass-footer {
+    background: #000;
+    border-top: var(--border-width) solid white;
+    padding: 3rem 10%;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
 
-    .footer-brand h3 {
-        font-family: var(--font-heading);
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        text-transform: uppercase;
-        color: var(--secondary-color);
-    }
+.footer-brand h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
 
-    .footer-brand p {
-        color: #888;
-    }
+.footer-brand p {
+    color: #888;
+}
 
-    .footer-links {
-        display: flex;
-        gap: 2rem;
-    }
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
 
-    .footer-links a {
-        color: white;
-        text-transform: uppercase;
-        font-weight: 700;
-        text-decoration: none;
-        font-family: var(--font-heading);
-        border: 1px solid white;
-        padding: 0.5rem 1rem;
-        transition: all 0.2s;
-    }
+.footer-links a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
 
-    .footer-links a:hover {
-        background: var(--primary-color);
-        box-shadow: 4px 4px 0px white;
-        transform: translate(-2px, -2px);
-    }
+.footer-links a:hover {
+    background: var(--primary-color);
+    box-shadow: 4px 4px 0px white;
+    transform: translate(-2px, -2px);
+}
 
-    .footer-bottom {
-        border-top: 1px dashed #333;
-        padding-top: 2rem;
-        color: #666;
-        font-size: 0.9rem;
-    }
+.footer-bottom {
+    border-top: 1px dashed #333;
+    padding-top: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+}
